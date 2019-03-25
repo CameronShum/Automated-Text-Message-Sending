@@ -1,6 +1,6 @@
 # Automated Text Message Sending
 
-A method that reacts to incoming text message and sends appropriate data from a text file.
+A program that reacts to incoming text message and sends appropriate data from a text file.
 
 ## Prerequisites
 - Install the Twilio and Flask libraries in the activated environment
