@@ -1,4 +1,4 @@
-# Automated Text Message Sending
+# Automated Text Message Manipulation Using Python
 
 A program that reacts to incoming text message and sends appropriate data from a text file.
 
