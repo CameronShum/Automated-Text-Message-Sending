@@ -17,13 +17,14 @@ pip install Flask
 - [Ngrok](https://ngrok.com/)
 
 ## Usage
-1) Open MessageSending.py.
-2) Open a seperate command prompt to tunnel the server to a webhook.
-3) Navigate to the activated ngrok.exe environment, type 
+1) Download MessageResponse.py and info.txt.
+2) Open MessageResponse.py.
+3) Open a seperate command prompt to tunnel the server to a webhook.
+4) Navigate to the activated ngrok.exe environment, type 
 ```
 $ngrok http 5000
 ```
-4) Copy the forwarding address: http://<span></span>XXXXXXXX.ngrok.io
+5) Copy the forwarding address: http://<span></span>XXXXXXXX.ngrok.io
 ```
 ngrok by @inconshreveable                                                                               (Ctrl+C to quit)
 
@@ -38,10 +39,10 @@ Forwarding                    https://XXXXXXXX.ngrok.io -> http://localhost:5000
 Connections                   ttl     opn     rt1     rt5     p50     p90
                               0       0       0.00    0.00    0.00    0.00
 ```
-5) Paste http://<span></span>XXXXXXXX.ngrok.<span>/<span>io**/sms** into the webhook in twilio under messaging.  
+6) Paste http://<span></span>XXXXXXXX.ngrok.<span>/<span>io**/sms** into the webhook in twilio under messaging.  
 ![alt text](https://raw.githubusercontent.com/CameronShum/Automated-Text-Message-Sending/master/Twilio%20Webhook.jpg "Entering Webhook")
 
-6) Send any of the below to the Twilio Phone number
+7) Send any of the below to the Twilio Phone number
  - Temperature
  - Humidity
  - Tilt
