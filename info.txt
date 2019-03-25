@@ -1,0 +1,3 @@
+2019-02-17T15:01:19.973 [Information] Executing 'Functions.IoTHub_EventHub1' (Reason='', Id=d13f8790-0a88-4615-bda2-a96827b3221a)
+2019-02-17T15:01:19.973 [Information] C# IoT Hub trigger function processed a message: {"ObjectName":"Avnet NUCLEO-L496ZG+BG96 Azure IoT Client","ObjectType":"SensorData","Version":"1.2","ReportingDevice":"STL496ZG-BG96","Temperature":"23.30","Humidity":"28","Pressure":"1007","Tilt":"2","ButtonPress":"0","TOD":"Sun 2019-02-17 15:01:19 UTC"}
+2019-02-17T15:01:19.973 [Information] Executed 'Functions.IoTHub_EventHub1' (Succeeded, Id=d13f8790-0a88-4615-bda2-a96827b3221a
