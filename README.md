@@ -42,7 +42,7 @@ Connections                   ttl     opn     rt1     rt5     p50     p90
 6) Paste http://<span></span>XXXXXXXX.ngrok.<span>/<span>io**/sms** into the webhook in twilio under messaging.  
 ![alt text](https://raw.githubusercontent.com/CameronShum/Automated-Text-Message-Sending/master/Twilio%20Webhook.jpg "Entering Webhook")
 
-7) Send any of the below to the Twilio Phone number
+7) Send any of the below to the Twilio Phone number as a text message
  - Temperature
  - Humidity
  - Tilt
