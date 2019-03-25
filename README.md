@@ -4,12 +4,15 @@ A method that reacts to incoming text message and sends appropriate data from a 
 
 ## Prerequisites
 - Install the Twilio and Flask libraries in the activated environment
+
 ```
 pip install twilio
 ```
+
 ```
 pip install Flask
 ```
+
 - A [Twilio](https://www.twilio.com/) account with a Twilio phone number 
 - [Ngrok](https://ngrok.com/)
 
@@ -35,5 +38,11 @@ Forwarding                    https://XXXXXXXX.ngrok.io -> http://localhost:5000
 Connections                   ttl     opn     rt1     rt5     p50     p90
                               0       0       0.00    0.00    0.00    0.00
 ```
-5) Paste http://<span></span>XXXXXXXX.ngrok.<span>/<span>io/sms into the webhook in twilio under messaging.  
+5) Paste http://<span></span>XXXXXXXX.ngrok.<span>/<span>io **/sms** into the webhook in twilio under messaging.  
 ![alt text](https://raw.githubusercontent.com/CameronShum/Automated-Text-Message-Sending/master/Twilio%20Webhook.jpg "Entering Webhook")
+
+6) Send any of the below to the Twilio Phone number
+ - Temperature
+ - Humidity
+ - Tilt
+ - Pressure
