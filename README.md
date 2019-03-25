@@ -14,10 +14,26 @@ pip install Flask
 - [Ngrok](https://ngrok.com/)
 
 ## Usage
-1) Start MessageSending.py.
+1) Open MessageSending.py.
 2) Open a seperate command prompt to tunnel the server to a webhook.
-3) Navigate to the folder that contains ngrok.exe, type 
+3) Navigate to the activated ngrok.exe environment, type 
 ```
 $ngrok http 5000
 ```
-4)
+4) Copy the forwarding address: http://<span></span>XXXXXXXX.ngrok.io
+```
+ngrok by @inconshreveable                                                                               (Ctrl+C to quit)
+
+Session Status                online
+Account                       Free (Plan: Your Name)
+Version                       2.3.23
+Region                        United States (us)
+Web Interface                 http://111.1.1.1:1111
+Forwarding                    http://XXXXXXXX.ngrok.io -> http://localhost:5000
+Forwarding                    https://XXXXXXXX.ngrok.io -> http://localhost:5000
+
+Connections                   ttl     opn     rt1     rt5     p50     p90
+                              0       0       0.00    0.00    0.00    0.00
+```
+5) Paste http://<span></span>XXXXXXXX.ngrok.<span>/<span>io/sms into the 
+<img  href="Twilio Webhook.jpg">
