@@ -8,10 +8,10 @@ lines = fin.readlines()
 
 #text file parsing for temperature, humidity, pressure, tilt
 
-def temp_read():
+def file_read(lookfor):
     i = 0
     num = ""
-    index = lines[1].find('"Temperature":"')+15
+    index = lines[1].find('"'+lookfor+'":"')+len(lookfor)+4
     #finds the index of a string, adds the length of the string to get the index of the character that follows
     while lines[1][index+i] != '"':
         num += (lines[1][index+i])
@@ -19,34 +19,6 @@ def temp_read():
         i+=1
     return (float(num))
     #returns a float for numerical operations
-
-
-def humi_read():
-    i = 0
-    num = ""
-    index = lines[1].find('"Humidity":"')+12
-    while lines[1][index+i] != '"':
-        num += (lines[1][index+i])
-        i+=1
-    return (float(num))
-
-def pres_read():
-    i = 0
-    num = ""
-    index = lines[1].find('"Pressure":"')+12
-    while lines[1][index+i] != '"':
-        num += (lines[1][index+i])
-        i+=1
-    return (float(num))
-
-def tilt_read():
-    i = 0
-    num = ""
-    index = lines[1].find('"Tilt":"')+8
-    while lines[1][index+i] != '"':
-        num += (lines[1][index+i])
-        i+=1
-    return (float(num))
 
 
 
@@ -64,18 +36,8 @@ def sms_reply():
 
     resp = MessagingResponse()
 
-    if body == "Tilt":
-        resp.message(str(tilt_read()))
-        #changes the content of MessagingResponse, must be a string
-
-    if body == "Pressure":
-        resp.message(str(pres_read()))
-
-    if body == "Temperature":
-        resp.message(str(temp_read()))
-
-    if body == "Humidity":
-        resp.message(str(humi_read()))
+    resp.message(str(file_read(body)))
+    #changes the content of MessagingResponse, must be a string
 
     return str(resp)
     #sends the message to the local server
