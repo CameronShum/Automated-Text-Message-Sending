@@ -8,7 +8,7 @@ def file_read(lookfor):
     #finds the index of a string, adds the length of the string to get the index of the character that follows
     while lines[1][index+i] != '"':
         num += (lines[1][index+i])
-        #stores all values after within "" into a string
+        #stores all values after : and within "  " into a string
         i+=1
     return (float(num))
     #returns a float for numerical operations
