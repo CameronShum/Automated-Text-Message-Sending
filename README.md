@@ -6,11 +6,11 @@ A program that reacts to incoming text message and sends appropriate data from a
 - Install the Twilio and Flask libraries in the activated environment
 
 ```
-pip install twilio
+$pip install twilio
 ```
 
 ```
-pip install Flask
+$pip install Flask
 ```
 
 - A [Twilio](https://www.twilio.com/) account with a Twilio phone number 
