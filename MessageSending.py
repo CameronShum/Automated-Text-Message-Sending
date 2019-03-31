@@ -3,12 +3,13 @@ from flask import Flask, request, redirect
 from twilio.twiml.messaging_response import MessagingResponse
 
 
-fin = open('info.txt', 'r')
+
 
 
 #text file parsing for temperature, humidity, pressure, tilt
 
 def file_read(lookfor):
+    fin = open('info.txt', 'r')
     lines = fin.readlines()
     i = 0
     num = ""
